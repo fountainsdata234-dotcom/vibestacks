@@ -1,0 +1,5 @@
+# Allow all crawlers to access all content
+User-agent: *
+Disallow:
+# Provide the location of the sitemap
+Sitemap: https://vibestack.netlify.app/sitemap.xml

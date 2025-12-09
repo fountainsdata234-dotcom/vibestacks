@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - VibeStack</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="keywords" content="contact vibestack, get in touch, feedback, collaboration, suggestions">
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.svg?v=3" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/bars.png?v=3">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/bars.png?v=3">
+  <link rel="stylesheet" href="style.css"> 
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script><script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({ appId: "e00abef6-9890-46d6-be48-6de7c7bd35fc", });
+  });
+</script>
+
+</head>
+<body> 
+  <header class="header">
+    <a href="index.html" class="logo-link">
+      <!-- Animated SVG Logo -->
+      <svg class="logo-svg" width="170" height="40" viewBox="0 0 170 40" xmlns="http://www.w3.org/2000/svg">
+        <g>
+          <rect class="bar bar1" x="0" y="10" width="8" height="20" rx="2"></rect>
+          <rect class="bar bar2" x="12" y="0" width="8" height="40" rx="2"></rect>
+          <rect class="bar bar3" x="24" y="10" width="8" height="20" rx="2"></rect>
+          <text class="logo-text" x="40" y="28" font-family="Inter, sans-serif" font-size="24" font-weight="600">VibeStack</text>
+        </g>
+      </svg>
+    </a>
+    <nav class="nav-menu">
+      <a href="index.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy</a>
+      <button id="theme-toggle">🌙 Dark Mode</button>
+    </nav>
+    <div class="header-right">
+      <button class="hamburger" id="hamburger-menu" aria-label="Open Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="content">
+    <h2 data-animate="fade-in-up">Contact Us</h2>
+    <p data-animate="fade-in-up" data-delay="0.1">We’d love to hear from you! Whether you have a suggestion, feedback, or collaboration idea — drop it below.</p>
+
+    <form id="contactForm" action="https://formsubmit.co/fountainsdata234@gmail.com" method="POST" data-netlify="false" data-animate="fade-in-up" data-delay="0.2">
+      <!-- FormSubmit.co hidden fields -->
+      <input type="hidden" name="website" value="vibestack.netlify.app">
+      <input type="hidden" name="_subject" value="New Contact Form Submission from VibeStack!"> <!-- Custom subject line -->
+      <input type="hidden" name="_next" value="https://vibestacks.netlify.app/thank-you.html"> <!-- Redirect to thank you page -->
+      <input type="hidden" name="_captcha" value="false"> <!-- Disable captcha for now, but good to know -->
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit" class="submit-button">
+        <span class="button-text">Send Message</span>
+        <div class="spinner"></div>
+      </button>
+      <p id="status"></p>
+    </form>
+  </main>
+
+  <button id="back-to-top-btn" title="Go to top">↑</button>
+
+  <footer>
+    <p>© 2025 VibeStack | <a href="privacy.html">Privacy Policy</a> | Stay sharp. Stay inspired.</p>
+  </footer>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore-compat.js"></script>
+
+  <script>(function(s){s.dataset.zone='10168842',s.src='https://forfrogadiertor.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+  <script src="script.js"></script>
+ 
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Blog Post Title - VibeStack</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Animated Favicon -->
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2160743232176533"
+     crossorigin="anonymous"></script>
+  <link rel="icon" href="favicon.svg?v=3" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/bars.png?v=3">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/bars.png?v=3">
+</head>
+  <!-- Ad Script -->
+  <script src="https://fpyf8.com/88/tag.min.js" data-zone="183133" async data-cfasync="false"></script>
+
+<body class="blog-post-page">
+  <header class="header">
+    <a href="index.html" class="logo-link">
+      <!-- Animated SVG Logo -->
+      <svg class="logo-svg" width="170" height="40" viewBox="0 0 170 40" xmlns="http://www.w3.org/2000/svg">
+        <g>
+          <!-- The Bars for animation -->
+          <rect class="bar bar1" x="0" y="10" width="8" height="20" rx="2"></rect>
+          <rect class="bar bar2" x="12" y="0" width="8" height="40" rx="2"></rect>
+          <rect class="bar bar3" x="24" y="10" width="8" height="20" rx="2"></rect>
+          <!-- The Text -->
+          <text class="logo-text" x="40" y="28" font-family="Inter, sans-serif" font-size="24" font-weight="600">VibeStack</text>
+        </g>
+      </svg>
+    </a>
+    <nav class="nav-menu">
+      <a href="index.html">Blog</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy</a>
+      <button id="theme-toggle">🌙 Dark Mode</button>
+    </nav>
+    <div class="header-right">
+      <button class="hamburger" id="hamburger-menu" aria-label="Open Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="content">
+    <!-- Blog Post Content Wrapper for Floating Card Effect -->
+    <div class="blog-post-wrapper" data-animate="fade-in-up">
+      <article class="blog-post">
+        <!-- Post Header with Cover Image -->
+        <header class="post-header">
+          <figure class="post-cover-image">
+            <!-- Replace this with your blog post's cover image -->
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fd248f46?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1200&h=600&fit=crop" alt="Placeholder cover image for blog post">
+          </figure>
+          <h2>Your Awesome Blog Post Title Here</h2>
+          <p class="meta">Published: <time datetime="YYYY-MM-DD">Month Day, Year</time></p>
+        </header>
+
+        <!-- Start your blog post content here -->
+        <p>This is where the main content of your blog post will go. You can add paragraphs, images, lists, and more.</p>
+        <p>Remember to use `&lt;h3&gt;` for subheadings and `&lt;img src="..." alt="..."&gt;` for images within the post.</p>
+        <!-- End your blog post content here -->
+
+        <p class="author">✍️ Written by [Your Name or Team VibeStack]</p>
+
+        <!-- Related Posts Section -->
+        <section class="related-posts-section">
+          <h3>You Might Also Like</h3>
+          <div id="related-posts-grid" class="related-posts-grid">
+            <!-- Related posts will be injected here by script.js -->
+          </div>
+          <a href="index.html" class="cta-button view-all-btn">View All Posts</a>
+        </section>
+
+        <!-- Like Button and Comment Section -->
+        <div class="post-interactions">
+          <button id="like-button" class="like-button">
+            <i class="far fa-heart"></i> Like
+            <span id="like-count">0</span>
+          </button>
+        </div>
+
+        <div class="comment-section">
+          <h3>Join the Conversation</h3>
+          <form id="comment-form">
+            <div class="form-group">
+              <label for="comment-name">Name</label>
+              <input type="text" id="comment-name" required>
+            </div>
+            <div class="form-group">
+              <label for="comment-text">Comment</label>
+              <textarea id="comment-text" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">
+              <span class="button-text">Post Comment</span>
+              <div class="spinner"></div>
+            </button>
+            <p id="comment-status"></p>
+          </form>
+          <div id="comments-list" class="comments-list"></div>
+          <button id="load-more-comments" class="cta-button" style="display: none;">Load More Comments</button>
+        </div>
+
+        <section class="share-section">
+          <h4>Share this post</h4>
+          <div class="share-links">
+            <a href="#" class="share-twitter" target="_blank" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="share-facebook" target="_blank" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="share-linkedin" target="_blank" aria-label="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <!-- Floating Read More Container -->
+  <div id="read-more-container" class="read-more-container"></div>
+
+  <button id="back-to-top-btn" title="Go to top">↑</button>
+
+  <footer>
+    <p>© 2025 VibeStack | <a href="privacy.html">Privacy Policy</a> | Stay sharp. Stay inspired.</p>
+  </footer>
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore-compat.js"></script>
+
+  <script>(function(s){s.dataset.zone='10168896',s.src='https://groleegni.net/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VibeStack - Tech, Productivity & Personal Growth Blog</title>
+    <meta
+      name="keywords"
+      content="vibestack, blog, tech, productivity, personal growth, self-improvement, AI tools, life hacks, money mindset"
+    />
+    <meta
+      name="description"
+      content="A collection of ideas on tech, productivity, and personal growth. Explore articles on AI, life hacks, and self-improvement to find your next breakthrough."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <!-- Cache-busting query string (?v=2) added to force browsers to update the icon -->
+    <link rel="icon" href="favicon.svg?v=3" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="images/bars.png?v=3" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/bars.png?v=3"
+    />
+    <!-- Font Awesome for search icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js"
+      defer
+    ></script>
+    <script>
+      window.OneSignalDeferred = window.OneSignalDeferred || [];
+      OneSignalDeferred.push(async function (OneSignal) {
+        await OneSignal.init({ appId: "e00abef6-9890-46d6-be48-6de7c7bd35fc" });
+      });
+    </script>
+  </head>
+  <body class="particle-background">
+    <header class="header">
+      <a class="logo-link" href="/">
+        <!-- Animated SVG Logo -->
+        <svg
+          class="logo-svg"
+          width="170"
+          height="40"
+          viewBox="0 0 170 40"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g>
+            <!-- The Bars for animation -->
+            <rect
+              class="bar bar1"
+              x="0"
+              y="10"
+              width="8"
+              height="20"
+              rx="2"
+            ></rect>
+            <rect
+              class="bar bar2"
+              x="12"
+              y="0"
+              width="8"
+              height="40"
+              rx="2"
+            ></rect>
+            <rect
+              class="bar bar3"
+              x="24"
+              y="10"
+              width="8"
+              height="20"
+              rx="2"
+            ></rect>
+            <!-- The Text -->
+            <text
+              class="logo-text"
+              x="40"
+              y="28"
+              font-family="Inter, sans-serif"
+              font-size="24"
+              font-weight="600"
+            >
+              VibeStack
+            </text>
+          </g>
+        </svg>
+      </a>
+      <nav class="nav-menu">
+        <a href="/">Blog</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/privacy">Privacy</a>
+        <button id="theme-toggle">🌙 Dark Mode</button>
+      </nav>
+      <div class="header-right">
+        <button class="hamburger" id="hamburger-menu" aria-label="Open Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="content">
+      <div class="blog-intro">
+        <h2 class="page-title">The VibeStack Blog</h2>
+        <p>
+          A collection of ideas on tech, productivity, and personal growth. Find
+          your next breakthrough right here.
+        </p>
+        <div class="search-container">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search articles by title or keyword..."
+          />
+          <button id="search-button" aria-label="Search">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <p
+          id="search-results-message"
+          class="search-results-message"
+          style="display: none"
+        ></p>
+      </div>
+
+      <div class="blog-grid">
+        <!-- Card for the new "Gen Z" blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="Gen Z, digital natives, future of work, gen z habits, gen z mindset, workplace culture, social media"
+          href="/gen-z"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=75"
+            alt="A group of young Gen Z professionals collaborating in a modern office"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">August 15, 2024</p>
+            <h3 class="blog-card-title">
+              Decoding Gen Z: The Digital Natives Redefining Work and Life
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                An inside look at the habits, values, and mindset of Gen Z.
+                Understand how this generation is shaping the future of work,
+                communication, and culture.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+        <!-- Card for the new "Overthinking" blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="stop overthinking, anxiety, mental peace, calm mind, simplify thoughts"
+          href="/overthinking"
+        >
+          <img
+            src="images/overthink.jpg"
+            alt="A Graphical design with -don’t overthink writen on it- "
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">August 10, 2024</p>
+            <h3 class="blog-card-title">
+              How to Stop Overthinking: A Guide to a Calmer Mind
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                Overthinking destroys more dreams than failure. Learn practical
+                steps to simplify your thoughts for a calmer, lighter life.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+        <!-- Card for the new "Forcing Strength" blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="stop being strong, vulnerability, emotional health, mental strength, self-care, healing"
+          href="/forcing"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1534308143481-c55f00be8bd7?auto=format&fit=crop&w=800&q=75"
+            alt="A person standing alone, looking out, symbolizing a moment of vulnerability and strength."
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">August 09, 2024</p>
+            <h3 class="blog-card-title">
+              Stop Forcing Yourself to Be Strong: The Power of Vulnerability
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                Real strength isn't about pretending you're fine. It's about
+                admitting you're tired and allowing yourself to heal.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+        <!-- Card for the new "Silent Pressure" blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="silent pressure, feeling behind, social media pressure, comparison, personal growth"
+          href="/silent"
+        >
+          <img
+            src="images/silent.jpg"
+            alt="A person looking stressed at a to-do list, representing silent pressure."
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">August 08, 2024</p>
+            <h3 class="blog-card-title">
+              The Silent Pressure Young People Carry
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                Feeling like you're already behind in life? You're not alone.
+                This is about the silent pressure to succeed fast and how to
+                find peace.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+        <!-- Card for the new "Feeling Stuck" blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="feeling stuck, life is stuck, not making progress, personal growth, self-doubt, motivation"
+          href="/stuck"
+        >
+          <img
+            src="images/stucked.jpg"
+            alt="A spider web signiying one been stucked"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">August 07, 2024</p>
+            <h3 class="blog-card-title">
+              Why You Feel Stuck (Even When You're Trying Your Best)
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                Feeling stuck doesn't mean you're failing. It often means
+                progress is happening quietly. Learn why waiting is a season of
+                preparation.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+        <!-- Card for the new "Heavy Mind" blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="mental exhaustion, mind feels heavy, burnout, mental health, self-care, overwhelmed, tired, emotional weight"
+          href="/heavy-mind"
+        >
+          <img
+            src="images/heavy-mind.jpg"
+            alt="A man scratching his head, looking overwhelmed and mentally exhausted."
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">August 05, 2024</p>
+            <h3 class="blog-card-title">
+              Why Your Mind Feels Heavy: The Quiet Truth About Mental Exhaustion
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                Feeling overwhelmed and mentally heavy? It's not laziness—it's
+                exhaustion. Learn why your mind feels heavy and how to find
+                peace.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+        <!-- Card for the new Personal Brand blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="personal brand, build a brand, online presence, content creation, social media branding, find your niche, personal branding"
+          href="/personal-brand"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=800&q=75"
+            alt="A person working on a laptop, building their personal brand online"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">25 July 2024</p>
+            <h3 class="blog-card-title">
+              How to Build a Personal Brand Online (Even with Zero Followers)
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                A beginner's guide to building a personal brand from scratch.
+                Learn how to find your niche, create content, and build a
+                community that trusts you.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+
+        <!-- Card for the new Reading Habit blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="reading habit, benefits of reading, read every day, self-improvement, personal growth, knowledge, focus"
+          href="/reading-habit"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&w=800&q=75"
+            alt="A person sitting comfortably while reading a book"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">20 July 2024</p>
+            <h3 class="blog-card-title">
+              Why Reading Just 10 Pages a Day Can Quietly Change Your Life
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                Discover how the simple habit of reading daily can boost your
+                focus, reduce stress, and give you a massive advantage in life.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+
+        <!-- Card for the new How to Invest Smartly blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="how to invest, investing for beginners, investing in 20s, smart investing, build wealth, financial freedom, little money investing"
+          href="/how-to-invest-smartly"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=75"
+            alt="Stock market chart on a screen representing investing"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">10 July 2024</p>
+            <h3 class="blog-card-title">
+              How to Invest Smartly in Your 20s (Even with Little Money)
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                A beginner's guide to investing in your 20s. Learn how to start
+                with little money, understand risk, and build long-term wealth.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+
+        <!-- Card for the new Student Mistakes blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="student mistakes, study tips, time management, procrastination, academic success, college advice"
+          href="/mistakes"
+        >
+          <img
+            src="images/student.jpg"
+            alt="A student realizing he made a mistake"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">20 June 2024</p>
+            <h3 class="blog-card-title">
+              10 Common Mistakes Students Make (And How to Avoid Them)
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                From poor time management to ignoring mental health, discover
+                the common pitfalls that hold students back and learn how to
+                overcome them.
+              </p>
+            </div>
+            <span class="read-more-btn"
+              >Read More
+              <span class="sr-only">
+                about 10 Common Mistakes Students Make (And How to Avoid
+                Them)</span
+              ></span
+            >
+          </div>
+        </a>
+
+        <!-- Card for the new Mental Health blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="mental health, well-being, self-care, anxiety, depression, stress management, emotional health"
+          href="/mental"
+        >
+          <img
+            src="images/mental.jpg"
+            alt="Mental health matters illustration"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">30 June 2024</p>
+            <h3 class="blog-card-title">
+              Understanding Mental Health: Why It Matters More Than Ever
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                Mental health isn't just about the absence of illness; it's
+                about how we handle life. Learn the signs of struggle and how to
+                improve your well-being.
+              </p>
+            </div>
+            <span class="read-more-btn"
+              >Read More
+              <span class="sr-only">
+                about Understanding Mental Health</span
+              ></span
+            >
+          </div>
+        </a>
+
+        <!-- Card for the new Smart Money post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="smart money, broke students, budgeting, saving, side hustles, financial habits, student finance"
+          href="/smart-money"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=75"
+            alt="Student budgeting at desk with laptop and coffee"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">05 November 2024</p>
+            <h3 class="blog-card-title">
+              Smart Money Habits for Broke Students
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                Practical tips to budget, save, and earn while in school. This
+                is a practical guide — nothing fancy, just what actually works.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+        <!-- Card for the new Everyday Habits post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="destroy focus, focus habits, productivity, stop multitasking, improve focus, daily habits, attention span"
+          href="/everyday"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=75"
+            alt="Focus and productivity setup"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">10 November 2024</p>
+            <h3 class="blog-card-title">
+              7 Everyday Habits That Quietly Destroy Your Focus
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                Discover 7 common habits killing your focus and how to regain
+                control of your time, mind, and motivation.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+        <!-- Card for the first blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="chrome extensions, productivity, focus, grammarly, momentum, superpowers"
+          href="/chrome-extensions"
+        >
+          <img
+            src="images/chrome extensions.PNG"
+            alt="Laptop showing Chrome extensions"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">30 October 2024</p>
+            <h3 class="blog-card-title">
+              5 Chrome Extensions to Supercharge Your Productivity
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                If you’ve ever felt like your browser is just for opening tabs,
+                you’re sleeping on pure power. Discover 5 extensions that can
+                quietly level up your daily life.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+
+        <!-- Card for the new AI Tools blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="ai tools, make money, free ai, side hustles, leonardo, opusclip"
+          href="/ai-tools"
+        >
+          <img
+            src="images/ai.jpg"
+            alt="AI tools illustration"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">15 November 2024</p>
+            <h3 class="blog-card-title">
+              7 Free AI Tools That Can Make You Money
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                You don’t need to be a coder or designer to make money with AI.
+                All you need are the right tools and a few good moves. Discover
+                7 of them here.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+
+        <!-- Card for the new Chrome Tricks blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="chrome tricks, browse faster, productivity, omnibox, tab groups, browser hacks"
+          href="/chrome-tricks"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1618424181497-157f25b6ddd5?auto=format&fit=crop&w=800&q=75"
+            alt="Abstract image of a browser with glowing lines"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">25 November 2024</p>
+            <h3 class="blog-card-title">
+              10 Hidden Chrome Tricks to Browse Like a Pro
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                Discover Chrome’s most powerful hidden tools, shortcuts, and
+                secrets you never knew existed. Learn to browse smarter, faster,
+                and with serious confidence.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+
+        <!-- Card for the new Hidden Android Features blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="hidden android features, tricks, hacks, guest mode, screen pinning, developer options, privacy"
+          href="/hidden-android"
+        >
+          <img
+            src="images/android.jpg"
+            alt="Android in a black screen"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">05 December 2024</p>
+            <h3 class="blog-card-title">
+              7 Hidden Android Features You Never Knew Existed
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                Discover secret Android features that can save battery, protect
+                your privacy, and even make your device feel faster. Unlock the
+                full power of your phone.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+
+        <!-- Card for the new AI Prompts blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="ai prompts, chatgpt, gemini, work smarter, productivity, students, business"
+          href="/ai-prompts"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1677756119517-756a188d2d94?auto=format&fit=crop&w=800&q=75"
+            alt="A person interacting with an abstract AI interface"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">15 December 2024</p>
+            <h3 class="blog-card-title">
+              10 AI Prompts to Work Smarter, Not Harder
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                AI is only as smart as the prompts you give it. Learn how to
+                talk to AI like a pro and get results that actually matter for
+                school, business, or personal growth.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+
+        <!-- Card for the new Self-Discipline blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="self-discipline, focus, consistency, psychology, habits, motivation, productivity"
+          href="/self-discipline"
+        >
+          <img
+            src="images/brain.jpg"
+            alt="A ladder going up a brain, symbolizing self-discipline and mental growth"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">25 December 2024</p>
+            <h3 class="blog-card-title">
+              The Psychology of Self-Discipline: Why You Lose Focus & How to Fix
+              It
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                Motivation starts your journey, but discipline finishes it.
+                Learn the psychological tricks to stay consistent even when you
+                don't feel like it.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+
+        <!-- Card for the new Rebuild Your Life blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="rebuild life, feel lost, get back on track, personal growth, self-improvement, focus, bounce back"
+          href="/rebuild-your-life"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1494500764479-0c8f2919a3d8?auto=format&fit=crop&w=800&q=75"
+            alt="A road leading towards a sunrise, symbolizing a new beginning"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">05 January 2024</p>
+            <h3 class="blog-card-title">
+              How to Rebuild Your Life When You Feel Lost: A Realistic Guide
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                A no-pressure, practical roadmap to get back in control when
+                everything feels stuck. This is about structure, not just
+                motivation talk.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+
+        <!-- Card for the new Why You're Broke blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="stop being broke, money habits, lifestyle inflation, financial freedom, saving money, budgeting, personal finance"
+          href="/why-youre-broke"
+        >
+          <img
+            src="images/broke.jpg"
+            alt="An empty wallet symbolizing a poor person"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">15 January 2024</p>
+            <h3 class="blog-card-title">
+              Why You’re Always Broke (and How to Break the Cycle)
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                More money doesn’t fix poor money habits — it only makes them
+                more expensive. Learn the real reason you're always broke and
+                how to fix it for good.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+
+        <!-- Card for the new Beat Procrastination blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="beat procrastination, stop procrastinating, stay consistent, focus, productivity, self-discipline, 2-minute rule"
+          href="/beat-procrastination"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=800&q=75"
+            alt="A person looking at a to-do list, representing procrastination"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">25 January 2024</p>
+            <h3 class="blog-card-title">
+              How to Beat Procrastination and Stay Consistent
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                Procrastination isn't a character flaw; it's a stress response.
+                Learn how to trick your brain into starting and build
+                unstoppable momentum.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+
+        <!-- Card for the new Brain Boost blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="boost brain, improve focus, memory, brain foods, games, productivity, cognitive enhancement"
+          href="/brain-boost"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?auto=format&fit=crop&w=800&q=75"
+            alt="A lightbulb with the word 'idea' on a chalkboard, representing brain-boosting ideas"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">05 February 2024</p>
+            <h3 class="blog-card-title">
+              Foods, Games & Micro-Habits That Actually Boost Your Brain
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                A practical guide to the foods, games, and tiny habits that fuel
+                focus, improve memory, and make you feel sharper every day. No
+                hype, just results.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+
+        <!-- Card for the new Building Confidence blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="build confidence, self-confidence, habits, self-respect, personal growth, mindset, self-improvement"
+          href="/building-confidence"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1534308143481-c55f00be8bd7?auto=format&fit=crop&w=800&q=75"
+            alt="A person standing confidently looking at a cityscape"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">15 February 2024</p>
+            <h3 class="blog-card-title">
+              10 Habits That Quietly Build Real Confidence
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                Real confidence isn't loud; it's built in silence. Discover the
+                small, daily habits that create unshakable self-trust and inner
+                peace.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+
+        <!-- Card for the new Start With Intention blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="start with intention, morning routine, mindset, personal growth, productivity, daily intentions, win the morning"
+          href="/start-with-intention"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=75"
+            alt="Morning sunrise with coffee and journal on table"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">15 April 2024</p>
+            <h3 class="blog-card-title">Start Your Day with Intention</h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                Transform your mornings and shape your mindset. Discover how to
+                create the kind of day you truly desire before the world decides
+                for you.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+
+        <!-- Card for the new Money Mindset blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="stop being broke, money mindset, financial freedom, budgeting, saving money, income streams, personal finance"
+          href="/money-mindset"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=75"
+            alt="Hands counting money with a notebook and calculator"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">05 March 2024</p>
+            <h3 class="blog-card-title">
+              How to Stop Being Broke: 7 Mindset Shifts That Change Everything
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                Being broke isn’t just about income; it’s a pattern of thinking.
+                Learn the mindset shifts and practical moves that quietly change
+                your financial life.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+
+        <!-- Card for the new Powerful Habits blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="powerful habits, life changing, before 25, self-improvement, personal growth, daily habits, success"
+          href="/powerful-habits"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=800&q=75"
+            alt="A person writing in a journal, representing habit building"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">15 March 2024</p>
+            <h3 class="blog-card-title">
+              7 Powerful Habits That Will Change Your Life Before 25
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                Your 20s are the foundation years. Discover 7 powerful habits
+                that, if started now, can transform your future for the better.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+
+        <!-- Card for the new Minimalism Guide blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="minimalism, simplify life, declutter, mindful consumption, digital minimalism, simple living, less is more"
+          href="/minimalism-guide"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=75"
+            alt="Minimalist Living Room"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">25 March 2024</p>
+            <h3 class="blog-card-title">
+              The Rise of Minimalism: How to Simplify Your Life
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                Discover how living with less can help you live more
+                intentionally, save money, and find peace in a cluttered world.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+
+        <!-- Card for the new Future of Work blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="future of work, remote work, in-office, hybrid, work from home, modern workplace, collaboration, pandemic"
+          href="/future-of-work"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=75"
+            alt="Modern workspace with laptop and coffee"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">05 April 2024</p>
+            <h3 class="blog-card-title">
+              The Future of Work: Remote vs. In-Office vs. Hybrid
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                The modern workforce is redefining where and how we work.
+                Explore the pros and cons of remote, in-office, and hybrid
+                models.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+
+        <!-- Card for the new Fitness Trends blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="fitness trends, 2026, home workouts, wearable tech, mind-body, yoga, virtual fitness, health, peloton, fitbit"
+          href="/fitness-trends"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?auto=format&fit=crop&w=800&q=75"
+            alt="People exercising in a modern gym"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">25 April 2024</p>
+            <h3 class="blog-card-title">Fitness Trends: What’s Hot in 2026?</h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                From virtual workouts to wearable tech, discover the latest
+                movements shaping the world of fitness, health, and smarter
+                living this year.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+
+        <!-- Card for the new Power of Consistency blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="power of consistency, daily habits, compound effect, routines, self-discipline, success, james clear"
+          href="/power-of-consistency"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1573496529574-be85d6a60704?auto=format&fit=crop&w=800&q=75"
+            alt="Man climbing mountain step by step, representing consistency"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">05 May 2024</p>
+            <h3 class="blog-card-title">
+              The Power of Consistency: Why Small Daily Actions Build Big
+              Results
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                It’s not what you do once in a while — it’s what you do every
+                day that changes your life. Learn why consistency beats
+                intensity.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+
+        <!-- Card for the new Positive Vibes blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="positive vibes, energy, mindset, protect your peace, gratitude, environment, self-improvement, sorrund"
+          href="/positive-vibes"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=800&q=75"
+            alt="Positive home environment with natural light and plants"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">15 May 2024</p>
+            <h3 class="blog-card-title">
+              Surround Yourself with Positive Vibes
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                Protect your peace, grow your energy, and attract what truly
+                inspires you by curating your environment and your circle.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+
+        <!-- Card for the new Side Hustle Guide blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="side hustles, nigerian students, make money online, work from home, freelancing, affiliate marketing, dropshipping"
+          href="/side-hustle-guide"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=75"
+            alt="Student working on a laptop, representing side hustles"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">05 June 2024</p>
+            <h3 class="blog-card-title">
+              10 Smart Hustles for Nigerian Students
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                You don’t need to graduate to start earning. Discover 10 smart
+                hustles you can start from home with just your phone and
+                consistency.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+
+        <!-- Card for the new Games blog post -->
+        <a
+          class="blog-card"
+          data-animate="fade-in-up"
+          data-keywords="top games, cool games, new games, silksong, fragpunk, prince of persia, black myth wukong, stellar blade"
+          href="/games"
+        >
+          <img
+            src="https://cdn2.unrealengine.com/fragpunk-is-a-hero-shooter-that-encourages-you-to-break-the-rules-3840x2160-7de7b1c41472.jpg?w=800&q=75"
+            alt="FragPunk Game"
+            class="blog-card-image"
+            loading="lazy"
+          />
+          <div class="blog-card-content">
+            <p class="blog-card-meta">10 June 2024</p>
+            <h3 class="blog-card-title">
+              Top 5 Cool Games You Should Try in 2025
+            </h3>
+            <div class="excerpt-wrapper">
+              <p class="blog-card-excerpt">
+                From stunning graphics to insane storylines — these are the
+                games everyone’s talking about this year. Discover 5 cool games
+                you should definitely check out.
+              </p>
+            </div>
+            <span class="read-more-btn">Read More</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="load-more-container">
+        <button id="load-more-btn" class="cta-button">
+          <span class="button-text">Load More</span>
+        </button>
+        <p
+          id="all-posts-loaded-message"
+          style="display: none; margin-top: 1em; color: #666"
+        >
+          We will notify you when more posts are written. Thanks for staying
+          with us!
+        </p>
+      </div>
+    </main>
+
+    <button id="back-to-top-btn" aria-label="Go to top">↑</button>
+
+    <footer>
+      <p>
+        © 2024 VibeStack | <a href="/privacy">Privacy Policy</a> | Stay sharp.
+        Stay inspired.
+      </p>
+    </footer>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore-compat.js"></script>
+    <script>
+      (function (s) {
+        (s.dataset.zone = "10233660"),
+          (s.src = "https://gizokraijaw.net/vignette.min.js");
+      })(
+        [document.documentElement, document.body]
+          .filter(Boolean)
+          .pop()
+          .appendChild(document.createElement("script"))
+      );
+    </script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
